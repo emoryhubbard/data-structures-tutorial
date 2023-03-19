@@ -32,10 +32,27 @@ of the call stack is printed for debugging purposes, called a stack trace.</p>
 ## Guess-a-Stack Example
 	Make word game where you have to put letters in right order.
 
+	'answer = ["r", "o", "c", "k"]
+letters = []
+gameover = False
+
+while gameover != True:
+    letter = input("Guess the next letter: ")
+    letters.append(letter)
+    print(f"Current letters: {letters}")
+
+    if letter != answer[len(letters) - 1]:
+        letters.pop()
+        print("Last letter not a match, try again.")
+        print(f"Current letters: {letters}")
+
+    if letters == answer:
+        gameover = True'
+
 ## Undo Function Problem
 	Finish implementing the missing undo function for a simple
 	drawing app.
 	Relevant personal notes: Rocketship project topic.
 
 
-	
+
