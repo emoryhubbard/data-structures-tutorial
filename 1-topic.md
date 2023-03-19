@@ -6,11 +6,13 @@
 <p>You'll find stacks in many places: the call stack, your browser history, the word processor undo button, etc.</p>
 <p>The reason stacks find so many uses, is because they are the simplest data structure that (1) keeps track of the last thing put in and (2) returns the last thing put in.</p>
 <p>This is called LIFO (Last in First Out). The last thing you put on, comes off first</p>
+
 ## Stack And Heap
 	Talk about applications of stack in memory
 	management for C++, and well-known stack-related
 	errors like stack overflow.
 	Relevant personal notes: C++ stack topic, Stack overflow topic.
+
 <p> A form of memory
 management is also referred to as the "stack"--more precisely,
 it is the memory reserved for local variables that belong to functions
@@ -26,9 +28,14 @@ of the call stack is printed for debugging purposes, called a stack trace.</p>
 <p>Other possible triggers of the error are infinite recursion, and even regular recursion if it goes too deep. Every time
 	you enter another layer of function more memory is reserved for it
 	on the stack. Non-recursive functions nested too deeply will do it too.</p>
+
 ## Guess-a-Stack Example
 	Make word game where you have to put letters in right order.
+
 ## Undo Function Problem
 	Finish implementing the missing undo function for a simple
 	drawing app.
 	Relevant personal notes: Rocketship project topic.
+
+
+	
