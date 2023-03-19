@@ -1,8 +1,8 @@
-I. README
+# I. README
 * Introduction
 	Overview and compare different data structures.
 	Relevant personal notes: Other containers topic.
-II. Stack
+# II. Stack
 * Why Stacks?
 	Talk about applications for performance and history.
 	Relevant personal notes: Stack topic.
@@ -18,7 +18,7 @@ II. Stack
 	drawing app.
 	Relevant personal notes: Rocketship project topic.
 * Solution
-III. Set
+# III. Set
 * Why Sets?
 	Talk about applications for performance and databases.
 * Hashing
@@ -41,7 +41,7 @@ III. Set
 	be practical. Implement the global_list and the is_taken()
 	function with the right data structure.
 * Solution
-IV. Tree
+# IV. Tree
 * Why Trees?
 	Explain that insertion with a BST is O (log n), vs O (n) for
 	a regular sorted array.
