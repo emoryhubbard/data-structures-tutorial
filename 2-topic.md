@@ -1,6 +1,5 @@
 # III. Set
 ## Why Sets?
-	Talk about applications for performance and databases.
 <p>A set can get O(1) performance for finding a value. That's right, even better than O(log n). Binary search has been dethroned!</p>
 
 ## Simplest Case
