@@ -299,4 +299,4 @@ Implement the remove() method to remove a memory from the tree.
 
 ## Congratulations!
 
-You've finished my tutorial on Stacks, Sets, and Tress in Python!
+You've finished my tutorial on Stacks, Sets, and Trees in Python!
