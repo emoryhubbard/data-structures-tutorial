@@ -1,37 +1,56 @@
 # III. Set
+
 ## Why Sets?
+
 <p>A set can get O(1) performance for finding a value. That's right, even better than O(log n). Binary search has been dethroned!</p>
 
 ## Simplest Case
+
 <p>Put</p>
+
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
 <p>into an arrray of 10 items.</p>
+
 <p>If 2 goes into index 2, you can retrieve it in O(1) time.</p>
+
 <p>But what about actual realistic numbers, that don't
-	match their own index? After all, you wouldn't want to
-	allocate memory for an array of billions to support an int.</p>
+match their own index? After all, you wouldn't want to
+allocate memory for an array of billions to support an int.</p>
 
 ## Realistic numbers
+
 <p>Put</p>
+
     12321, 8432, 843, 94, 5, 386, 947, 8, 99, 0
+
 <p>into an array of 10 items.</p>
+
 <p>If 8432 goes into index 2, you can retrieve it in O(1) time.
-	How to calculate that it goes there? Use a hashing
-	function to calculate the index:</p>
+How to calculate that it goes there? Use a hashing
+function to calculate the index:</p>
+
     hash(item) = index
+
 <p>In its simplest form, it is just the number
-	% the size of the array (if the items weren't numbers, you would need to use a proper hashing function, eg. on a string, memory address, or some kind of unique id):</p>
+% the size of the array (if the items weren't numbers, you would need to use a proper hashing function, eg. on a string, memory address, or some kind of unique id):</p>
+
     8432 % 10 = 2
+
 <p>You will immediately see a
-	problem here. Where would a number like 92 go?
-	Exactly over the same spot as 8432...</p>
+problem here. Where would a number like 92 go?
+Exactly over the same spot as 8432...</p>
 
 ## Conflicts
+
 <p>You can move items over to the left or right until they find space, or you can create an array in that spot to hold multiple items. Either way, if conflicts get too frequent, your O(1) performance will be lost.</p>
+
 <p>The key is to use a sparse list--keep the size of the array large enough so that conflicts stay infrequent, expanding as needed.</p>
 
 ## Set vs List Test Example
+
 <p>Example problem: use Python's timing functions to benchmark performance on a certain test, for sets and for lists.</p>
+
     import timeit
 
     def list_loops(search_word):
@@ -72,18 +91,22 @@
     print(f"Set_loops() average ms = {ms:.0f}")
 
 ## Book Names Problem
+
 <p>The program starts with a list of potential books. Alternate names are created for each potential
-	book, in case the first
-	choice is already taken, and prints the matches that occured.<p>
+book, in case the first
+choice is already taken, and prints the matches that occured.<p>
+
 <p>It checks to see if each book name is in a global list called all_books and prints the result. Afterwards, it checks to see
-	if any of the alternate versions of potential names are
-	taken and displays them as well.</p>
+if any of the alternate versions of potential names are
+taken and displays them as well.</p>
+
 <p>The current function
-	is_taken() function is mostly correct, but the all_books
-	variable it references is implemented as the wrong data
-	structure, causing the program to slow down too much to
-	be practical. Implement the all_books and the is_taken()
-	function with the right data structure.</p>
+is_taken() function is mostly correct, but the all_books
+variable it references is implemented as the wrong data
+structure, causing the program to slow down too much to
+be practical. Implement the all_books and the is_taken()
+function with the right data structure.</p>
+
     '''
     To run this program, first download books.zip from
     this link: https://github.com/zygmuntz/goodbooks-10k/releases

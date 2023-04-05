@@ -262,16 +262,21 @@ Implement the remove() method to remove a memory from the tree.
 		
 		# be sure to remove parent from tree before calling this one
 		def __reinsert_children(self, parent):
+			if parent == None:
+				return
+			
 			left = parent.left
 			right = parent.right
 
 			if parent.right != None:
 				parent.right = None
 				self.add(right)
+				self.__reinsert_children(right)
 			
 			if parent.left != None:
 				parent.left = None
 				self.add(left)
+				self.__reinsert_children(left)
 
 	memories = BST()
 	memories.add(Node("First memory"))
@@ -288,6 +293,6 @@ Implement the remove() method to remove a memory from the tree.
 	memory = memories.get("Sixth memory")
 	memories.remove(memory)
 
-	print(memories.get("Fifth memory"))
+	print(memories.get("Fifth memory").get_name())
 	print(memories.get("Sixth memory"))
-	print(memories.get("Seventh memory"))
+	print(memories.get("Seventh memory").get_name())
