@@ -127,5 +127,9 @@ drawing app.
 
 	pyray.close_window()
 
+## What's Next?
+
+Continue to learn why and how to use Sets here: <a href=https://github.com/emoryhubbard/data-structures-tutorial/blob/main/2-topic.md>https://github.com/emoryhubbard/data-structures-tutorial/blob/main/2-topic.md</a>
+
 
 

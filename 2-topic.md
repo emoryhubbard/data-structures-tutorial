@@ -224,3 +224,7 @@ function with the right data structure.</p>
     print("The potential names: ")
     print(potential_names)
     print(f"The matches: {is_taken(potential_names)}")
+
+## What's Next?
+
+Continue to learn why and how to use Trees here: <a href=https://github.com/emoryhubbard/data-structures-tutorial/blob/main/3-topic.md>https://github.com/emoryhubbard/data-structures-tutorial/blob/main/3-topic.md</a>

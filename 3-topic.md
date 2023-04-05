@@ -296,3 +296,7 @@ Implement the remove() method to remove a memory from the tree.
 	print(memories.get("Fifth memory").get_name())
 	print(memories.get("Sixth memory"))
 	print(memories.get("Seventh memory").get_name())
+
+## Congratulations!
+
+You've finished my tutorial on Stacks, Sets, and Tress in Python!
