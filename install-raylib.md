@@ -4,11 +4,11 @@ Raylib is basic graphics library available for Python. Follow these basic troubl
 
 ## Easy Method
 
-Install Raylib n your machine like this:
+Install Raylib on your machine like this:
 
 	py -m pip install raylib
 
-## Use different command.
+## Use different command
 "py" command can be different based on OS and python version.
 Python supports keeping old command names to support older versions,
 and even python commands with old version numbers on the end if
@@ -19,7 +19,7 @@ if you like.
 
 Also, depending on your OS, the command could be python3, python, py.
 
-## Check Python version.
+## Check Python version
 
 If the above doesn't work, check Python version.
 
@@ -103,6 +103,7 @@ Apple M1 Max chip), as it did for my friend who had one:
 https://www.codeproject.com/Questions/5325132/Installing-and-using-raylib-in-macos-12-2-1-with-P
 
 Error message thrown when this happens:
+
     0 eastonpulver@Eastons-MacBook-Air cse210-04 % python3 -m pip install raylib Collecting raylib Using cached raylib-4.2.1.2.tar.gz (69 kB) Preparing metadata (setup.py) ... done Requirement already satisfied: cffi>=1.14.6 in /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages (from raylib) (1. 15.0) Requirement already satisfied: inflection in /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages (from raylib) (0.5. 1) Requirement already satisfied: pycparser in /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages (from cffi>=1.14.6-> raylib) (2.21) Building wheels for collected packages: raylib Building wheel for raylib (setup.py) ... error error: subprocess-exited-with-error 
     x python setup.py bdist_wheel did not run successfully. 1 exit code: 1 L-> [74 lines of output] not windows, trying Unix build 
     *************** WARNING *************** 
@@ -116,7 +117,4 @@ Error message thrown when this happens:
 
 And so on... with similar warning messages.
 
-Build from source:
-
-    Build from source manually.
-    See SSL connection eror for more links to install manually.			
+You can try building from the source. See SSL connection error for more links to install manually, build from source manually, or build from source automatically.
