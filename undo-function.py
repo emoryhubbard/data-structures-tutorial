@@ -1,12 +1,13 @@
 '''Note: Left-click to draw'''
 
+import pyray
+
 HEIGHT = 900
 WIDTH = 1500
 MAX_X = 1500
 MAX_Y = 900
 TITLE = "Drawing App"
 FRAME_RATE = 60
-import pyray
 
 pyray.init_window(MAX_X, MAX_Y, TITLE)
 pyray.set_target_fps(FRAME_RATE)

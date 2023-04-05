@@ -47,9 +47,17 @@ Make word game where you have to put letters in right order.
 
 ## Undo Function Problem
 Finish implementing the missing undo function for a simple
-drawing app.
+drawing app. To use finish it, you'll need to install a Python graphics library called Raylib using this command:
+
+	py -m pip install raylib
+
+If you have any issues installing Raylib, see these instructions: <a href=https://github.com/emoryhubbard/data-structures-tutorial/blob/main/install-raylib.md>https://github.com/emoryhubbard/data-structures-tutorial/blob/main/install-raylib.md</a>
+
+Once Raylib is installed, you can run this drawing app, and implement the missing undo function using its code as a base:
 
 	'''Note: Left-click to draw'''
+
+	import pyray
 
 	HEIGHT = 900
 	WIDTH = 1500
@@ -57,7 +65,6 @@ drawing app.
 	MAX_Y = 900
 	TITLE = "Drawing App"
 	FRAME_RATE = 60
-	import pyray
 
 	pyray.init_window(MAX_X, MAX_Y, TITLE)
 	pyray.set_target_fps(FRAME_RATE)
